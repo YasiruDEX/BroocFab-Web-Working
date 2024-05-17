@@ -6,17 +6,17 @@
 
 /** Add fonts into your Next.js project:
 
-import { Gabarito } from 'next/font/google'
-import { Libre_Franklin } from 'next/font/google'
+import { Gabarito } from &apos;next/font/google&apos;
+import { Libre_Franklin } from &apos;next/font/google&apos;
 
 gabarito({
-  subsets: ['latin'],
-  display: 'swap',
+  subsets: [&apos;latin&apos;],
+  display: &apos;swap&apos;,
 })
 
 libre_franklin({
-  subsets: ['latin'],
-  display: 'swap',
+  subsets: [&apos;latin&apos;],
+  display: &apos;swap&apos;,
 })
 
 To read more about using these font, please visit the Next.js documentation:
@@ -289,7 +289,7 @@ export function MainPage2() {
                   </div>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                  &quot;BroocFab's customer service is top-notch! They listened to my needs and delivered exactly what I envisioned. I couldn't be happier with the outcome and will definitely be using their services again.&quot;
+                  &quot;BroocFab&apos;s customer service is top-notch! They listened to my needs and delivered exactly what I envisioned. I couldn&apos;t be happier with the outcome and will definitely be using their services again.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -312,7 +312,7 @@ export function MainPage2() {
                   </div>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                  &quot;The precision and quality of BroocFab's 3D prints are incredible. Every project I have done with them has exceeded my expectations. Highly recommend for any professional looking for reliable 3D printing services.&quot;
+                  &quot;The precision and quality of BroocFab&apos;s 3D prints are incredible. Every project I have done with them has exceeded my expectations. Highly recommend for any professional looking for reliable 3D printing services.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -335,7 +335,7 @@ export function MainPage2() {
                   </div>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                  &quot;BroocFab's team is incredibly knowledgeable and helpful. They walked me through the entire process, ensuring that my project was a success. The final product was exactly what I needed.&quot;
+                  &quot;BroocFab&apos;s team is incredibly knowledgeable and helpful. They walked me through the entire process, ensuring that my project was a success. The final product was exactly what I needed.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -358,7 +358,7 @@ export function MainPage2() {
                   </div>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                  &quot;I was amazed by the turnaround time and quality of the prints from BroocFab. They have a keen eye for detail and ensure that every aspect of the print is perfect. I wouldn't go anywhere else for my 3D printing needs.&quot;
+                  &quot;I was amazed by the turnaround time and quality of the prints from BroocFab. They have a keen eye for detail and ensure that every aspect of the print is perfect. I wouldn&apos;t go anywhere else for my 3D printing needs.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -420,7 +420,7 @@ export function MainPage2() {
           target="_blank"
         >
           <PhoneIcon className="h-7 w-7" />
-          <span className="ml-3 text-lg font-medium">Let's chat</span>
+          <span className="ml-3 text-lg font-medium">Let&apos;s chat</span>
         </Link>
       </div>
     </div>
