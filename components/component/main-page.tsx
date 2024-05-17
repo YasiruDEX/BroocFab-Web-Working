@@ -27,13 +27,15 @@ import Link from "next/link"
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
 
+import * as React from 'react'
+
 export function MainPage() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="bg-gray-900 text-white py-2 px-4 md:px-6">
         <div className="container flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Package2Icon />
+            <Package2Icon className="h-6 w-6" />
             <span className="font-semibold text-lg">BroocFab</span>
           </div>
           <nav className="flex items-center gap-4">
@@ -100,7 +102,7 @@ export function MainPage() {
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-8">
             <Card>
               <CardHeader>
-                <CuboidIcon />
+                <CuboidIcon className="h-12 w-12 text-gray-900 dark:text-gray-50" />
               </CardHeader>
               <CardContent>
                 <h3 className="text-xl font-semibold">Rapid Prototyping</h3>
@@ -111,7 +113,7 @@ export function MainPage() {
             </Card>
             <Card>
               <CardHeader>
-                <GaugeIcon />
+                <GaugeIcon className="h-12 w-12 text-gray-900 dark:text-gray-50" />
               </CardHeader>
               <CardContent>
                 <h3 className="text-xl font-semibold">Custom Parts</h3>
@@ -122,7 +124,7 @@ export function MainPage() {
             </Card>
             <Card>
               <CardHeader>
-                <PaletteIcon />
+                <PaletteIcon className="h-12 w-12 text-gray-900 dark:text-gray-50" />
               </CardHeader>
               <CardContent>
                 <h3 className="text-xl font-semibold">Artistic Creations</h3>
@@ -209,11 +211,11 @@ export function MainPage() {
                   <div className="space-y-1">
                     <h4 className="font-semibold">John Doe</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
                     </div>
                   </div>
                 </div>
@@ -234,11 +236,11 @@ export function MainPage() {
                   <div className="space-y-1">
                     <h4 className="font-semibold">Jane Smith</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
                     </div>
                   </div>
                 </div>
@@ -259,11 +261,11 @@ export function MainPage() {
                   <div className="space-y-1">
                     <h4 className="font-semibold">Michael Johnson</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
                     </div>
                   </div>
                 </div>
@@ -280,7 +282,7 @@ export function MainPage() {
       <footer className="bg-gray-900 text-white py-6 w-full shrink-0">
         <div className="container flex flex-col items-center justify-between gap-4 sm:flex-row">
           <div className="flex items-center gap-2">
-            <Package2Icon />
+            <Package2Icon className="h-6 w-6" />
             <span className="font-semibold text-lg">BroocFab</span>
           </div>
           <nav className="flex items-center gap-4">
@@ -304,9 +306,10 @@ export function MainPage() {
   )
 }
 
-function CuboidIcon() {
+function CuboidIcon(props: any) {
   return (
     <svg
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -325,9 +328,10 @@ function CuboidIcon() {
 }
 
 
-function GaugeIcon() {
+function GaugeIcon(props: any) {
   return (
     <svg
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -345,9 +349,10 @@ function GaugeIcon() {
 }
 
 
-function Package2Icon() {
+function Package2Icon(props: any) {
   return (
     <svg
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -366,10 +371,10 @@ function Package2Icon() {
 }
 
 
-function PaletteIcon() {
+function PaletteIcon(props: any) {
   return (
     <svg
-
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -390,9 +395,10 @@ function PaletteIcon() {
 }
 
 
-function StarIcon() {
+function StarIcon(props: any) {
   return (
     <svg
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
