@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { MainPage } from "@/components/component/main-page";
+import { MainPage2 } from "@/components/component/main-page2";
 
 export default function Home() {
   return (
     <main className="">
-      <MainPage />
+      <MainPage2 />
     </main>
   );
 }
