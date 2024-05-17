@@ -244,7 +244,7 @@ export function MainPage() {
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
                 &quot;I&apos;m absolutely thrilled with the custom 3D printed parts I ordered from BroocFab. The attention to
-                  detail and the level of craftsmanship is truly impressive. I can't wait to work with them again on my
+                  detail and the level of craftsmanship is truly impressive. I can&apos;t wait to work with them again on my
                   next project.&quot;
                 </p>
               </CardContent>
