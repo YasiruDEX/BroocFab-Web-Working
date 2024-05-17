@@ -27,6 +27,8 @@ import Link from "next/link"
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
 
+import React from "react";
+
 export function MainPage() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
@@ -304,7 +306,7 @@ export function MainPage() {
   )
 }
 
-function CuboidIcon(props) {
+function CuboidIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -326,7 +328,7 @@ function CuboidIcon(props) {
 }
 
 
-function GaugeIcon(props) {
+function GaugeIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -347,7 +349,7 @@ function GaugeIcon(props) {
 }
 
 
-function Package2Icon(props) {
+function Package2Icon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -369,7 +371,7 @@ function Package2Icon(props) {
 }
 
 
-function PaletteIcon(props) {
+function PaletteIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -393,7 +395,7 @@ function PaletteIcon(props) {
 }
 
 
-function StarIcon(props) {
+function StarIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
