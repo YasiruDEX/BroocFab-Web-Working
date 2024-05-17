@@ -6,17 +6,17 @@
 
 /** Add fonts into your Next.js project:
 
-import { Gabarito } from 'next/font/google'
-import { Libre_Franklin } from 'next/font/google'
+import { Gabarito } from &apos;next/font/google&apos;
+import { Libre_Franklin } from &apos;next/font/google&apos;
 
 gabarito({
-  subsets: ['latin'],
-  display: 'swap',
+  subsets: [&apos;latin&apos;],
+  display: &apos;swap&apos;,
 })
 
 libre_franklin({
-  subsets: ['latin'],
-  display: 'swap',
+  subsets: [&apos;latin&apos;],
+  display: &apos;swap&apos;,
 })
 
 To read more about using these font, please visit the Next.js documentation:
@@ -27,7 +27,7 @@ import Link from "next/link"
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
 
-import * as React from 'react'
+import * as React from &apos;react&apos;
 
 export function MainPage() {
   return (
@@ -309,7 +309,7 @@ export function MainPage() {
           target="_blank"
         >
           <PhoneIcon className="h-6 w-6" />
-          <span className="sr-only">Let's chat on WhatsApp</span>
+          <span className="sr-only">Let&apos;s chat on WhatsApp</span>
         </Link>
       </div>
     </div>
