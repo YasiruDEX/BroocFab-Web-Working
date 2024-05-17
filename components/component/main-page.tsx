@@ -218,9 +218,9 @@ export function MainPage() {
                   </div>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                  "BroocFab's 3D printing services have been a game-changer for my business. The quality of their work
+                &quot;BroocFab&apos;s 3D printing services have been a game-changer for my business. The quality of their work
                   is exceptional, and the turnaround time is incredibly fast. I highly recommend their services to
-                  anyone in need of custom parts or prototypes."
+                  anyone in need of custom parts or prototypes.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -243,9 +243,9 @@ export function MainPage() {
                   </div>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                  "I'm absolutely thrilled with the custom 3D printed parts I ordered from BroocFab. The attention to
+                &quot;I&apos;m absolutely thrilled with the custom 3D printed parts I ordered from BroocFab. The attention to
                   detail and the level of craftsmanship is truly impressive. I can't wait to work with them again on my
-                  next project."
+                  next project.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -268,9 +268,9 @@ export function MainPage() {
                   </div>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                  "As an artist, I've been blown away by the quality and versatility of BroocFab's 3D printing services.
-                  They've helped me bring my creative visions to life in ways I never thought possible. I highly
-                  recommend their services to anyone looking to explore the world of 3D printing."
+                &quot;As an artist, I&apos;ve been blown away by the quality and versatility of BroocFab&apos;s 3D printing services.
+                  They&apos;ve helped me bring my creative visions to life in ways I never thought possible. I highly
+                  recommend their services to anyone looking to explore the world of 3D printing.&quot;
                 </p>
               </CardContent>
             </Card>
