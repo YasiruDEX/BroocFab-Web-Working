@@ -306,7 +306,7 @@ export function MainPage() {
   )
 }
 
-function CuboidIcon(props: React.SVGProps<SVGSVGElement> ) {
+function CuboidIcon(props: any ) {
   return (
     <svg
       {...props}
@@ -328,7 +328,7 @@ function CuboidIcon(props: React.SVGProps<SVGSVGElement> ) {
 }
 
 
-function GaugeIcon(props: React.SVGProps<SVGSVGElement>) {
+function GaugeIcon(props: any) {
   return (
     <svg
       {...props}
@@ -349,7 +349,7 @@ function GaugeIcon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 
-function Package2Icon(props: React.SVGProps<SVGSVGElement>) {
+function Package2Icon(props: any) {
   return (
     <svg
       {...props}
@@ -371,7 +371,7 @@ function Package2Icon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 
-function PaletteIcon(props: React.SVGProps<SVGSVGElement>) {
+function PaletteIcon(props: any) {
   return (
     <svg
       {...props}
@@ -395,7 +395,7 @@ function PaletteIcon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 
-function StarIcon(props: React.SVGProps<SVGSVGElement>) {
+function StarIcon(props: any) {
   return (
     <svg
       {...props}
