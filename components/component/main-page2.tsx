@@ -26,14 +26,15 @@ To read more about using these font, please visit the Next.js documentation:
 import Link from "next/link"
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
 
 export function MainPage2() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="bg-gray-900/80 text-white py-2 px-4 md:px-6 fixed top-0 left-0 right-0 backdrop-blur-sm z-50">
+      <header className="bg-gray-900/65 text-white py-4 px-4 md:px-6 fixed top-0 left-0 right-0 backdrop-blur-sm z-50">
         <div className="container flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Package2Icon className="h-6 w-6" />
+            <Package2Icon className="h-7 w-7" />
             <span className="font-semibold text-lg">BroocFab</span>
           </div>
           <a
@@ -45,12 +46,12 @@ export function MainPage2() {
           </a>
         </div>
       </header>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#2c5282] to-[#4c6ef5] mt-16">
+      <section className="w-full py-12 md:py-10 lg:py-10 bg-gradient-to-r from-[#2c5282] to-[#4c6ef5] mt-16">
         <div className="container px-4 md:px-6 text-white">
           <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-4">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                Unleash Your Creativity with BroocFab
+              <h1 className="text-3x1 font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-7xl">
+                Transform your concepts into tangible reality today!
               </h1>
               <p className="max-w-[600px] text-lg">
                 Experience the power of 3D printing with BroocFab. From custom prototypes to unique personalized items,
@@ -61,7 +62,7 @@ export function MainPage2() {
                   className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-[#2c5282] shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
                   href="#"
                 >
-                  Get Started
+                  Start Printing
                 </Link>
                 <a
                   className="inline-flex h-12 items-center justify-center rounded-md bg-green-500 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-green-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-700 disabled:pointer-events-none disabled:opacity-50"
@@ -74,9 +75,9 @@ export function MainPage2() {
             </div>
             <img
               alt="Hero"
-              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full"
+              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover"
               height="550"
-              src="/placeholder.svg"
+              src="/main.jpg"
               width="550"
             />
           </div>
@@ -163,7 +164,7 @@ export function MainPage2() {
         </div>
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-        <div className="container px-4 md:px-6">
+        <div className="container px-10 md:px-12">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Gallery of 3D Printed Creations
@@ -177,47 +178,84 @@ export function MainPage2() {
               alt="3D Printed Item"
               className="aspect-[3/2] object-cover rounded-lg"
               height="400"
-              src="/placeholder.svg"
+              src="/show1.jpg"
               width="600"
             />
             <img
               alt="3D Printed Item"
               className="aspect-[3/2] object-cover rounded-lg"
               height="400"
-              src="/placeholder.svg"
+              src="/show2.jpg"
               width="600"
             />
             <img
               alt="3D Printed Item"
               className="aspect-[3/2] object-cover rounded-lg"
               height="400"
-              src="/placeholder.svg"
+              src="/show3.jpg"
               width="600"
             />
             <img
               alt="3D Printed Item"
               className="aspect-[3/2] object-cover rounded-lg"
               height="400"
-              src="/placeholder.svg"
+              src="/show3.jpg"
               width="600"
             />
             <img
               alt="3D Printed Item"
               className="aspect-[3/2] object-cover rounded-lg"
               height="400"
-              src="/placeholder.svg"
+              src="/show1.jpg"
               width="600"
             />
             <img
               alt="3D Printed Item"
               className="aspect-[3/2] object-cover rounded-lg"
               height="400"
-              src="/placeholder.svg"
+              src="/show2.jpg"
               width="600"
             />
           </div>
         </div>
       </section>
+
+      <div className="container grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 px-4 md:px-6">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-950">
+          <div className="p-6 md:p-8">
+            <h3 className="text-2xl md:text-3xl font-bold mb-2">Starter</h3>
+            <p className="text-gray-500 mb-6 dark:text-gray-400">Perfect for individuals and small teams.</p>
+            <div className="flex items-baseline mb-4">
+              <span className="text-4xl md:text-5xl font-bold">$9</span>
+              <span className="text-gray-500 text-sm md:text-base">/month</span>
+            </div>
+            <Button className="w-full">Get Started</Button>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-950">
+          <div className="p-6 md:p-8">
+            <h3 className="text-2xl md:text-3xl font-bold mb-2">Pro</h3>
+            <p className="text-gray-500 mb-6 dark:text-gray-400">Ideal for growing teams and businesses.</p>
+            <div className="flex items-baseline mb-4">
+              <span className="text-4xl md:text-5xl font-bold">$29</span>
+              <span className="text-gray-500 text-sm md:text-base">/month</span>
+            </div>
+            <Button className="w-full">Get Started</Button>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-950">
+          <div className="p-6 md:p-8">
+            <h3 className="text-2xl md:text-3xl font-bold mb-2">Enterprise</h3>
+            <p className="text-gray-500 mb-6 dark:text-gray-400">Tailored for large organizations and teams.</p>
+            <div className="flex items-baseline mb-4">
+              <span className="text-4xl md:text-5xl font-bold">$99</span>
+              <span className="text-gray-500 text-sm md:text-base">/month</span>
+            </div>
+            <Button className="w-full">Get Started</Button>
+          </div>
+        </div>
+      </div>
+      
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
         <div className="container px-4 md:px-6">
           <div className="space-y-4 text-center">
@@ -227,15 +265,15 @@ export function MainPage2() {
             </p>
           </div>
           <div className="flex gap-8 overflow-x-auto py-8 snap-x snap-mandatory">
-            <Card className="flex-shrink-0 snap-center w-full max-w-md">
+            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
-                    <AvatarImage alt="@customer1" src="/placeholder-user.jpg" />
+                    <AvatarImage alt="@customer1" src="/p1.png" />
                     <AvatarFallback>C1</AvatarFallback>
                   </Avatar>
                   <div className="space-y-1">
-                    <h4 className="font-semibold">John Doe</h4>
+                    <h4 className="font-semibold">Mr. Nihal Edirisignhe</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
                       <StarIcon className="w-5 h-5" />
                       <StarIcon className="w-5 h-5" />
@@ -246,21 +284,19 @@ export function MainPage2() {
                   </div>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                &quot;As an artist, I&apos;ve been blown away by the quality and versatility of BroocFab&apos;s 3D printing services.
-                  They&apos;ve helped me bring my creative visions to life in ways I never thought possible. I highly
-                  recommend their services to anyone looking to explore the world of 3D printing.&quot;
+                  &quot;BroocFab's customer service is top-notch! They listened to my needs and delivered exactly what I envisioned. I couldn't be happier with the outcome and will definitely be using their services again.&quot;
                 </p>
               </CardContent>
             </Card>
-            <Card className="flex-shrink-0 snap-center w-full max-w-md">
+            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
-                    <AvatarImage alt="@customer2" src="/placeholder-user.jpg" />
+                    <AvatarImage alt="@customer2" src="/p2.png" />
                     <AvatarFallback>C2</AvatarFallback>
                   </Avatar>
                   <div className="space-y-1">
-                    <h4 className="font-semibold">Jane Smith</h4>
+                    <h4 className="font-semibold">Mr. Samith Thennakoon</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
                       <StarIcon className="w-5 h-5" />
                       <StarIcon className="w-5 h-5" />
@@ -271,21 +307,19 @@ export function MainPage2() {
                   </div>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                &quot;As an artist, I&apos;ve been blown away by the quality and versatility of BroocFab&apos;s 3D printing services.
-                  They&apos;ve helped me bring my creative visions to life in ways I never thought possible. I highly
-                  recommend their services to anyone looking to explore the world of 3D printing.&quot;
+                  &quot;The precision and quality of BroocFab's 3D prints are incredible. Every project I have done with them has exceeded my expectations. Highly recommend for any professional looking for reliable 3D printing services.&quot;
                 </p>
               </CardContent>
             </Card>
-            <Card className="flex-shrink-0 snap-center w-full max-w-md">
+            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
-                    <AvatarImage alt="@customer3" src="/placeholder-user.jpg" />
+                    <AvatarImage alt="@customer3" src="/p3.png" />
                     <AvatarFallback>C3</AvatarFallback>
                   </Avatar>
                   <div className="space-y-1">
-                    <h4 className="font-semibold">Michael Johnson</h4>
+                    <h4 className="font-semibold">Mr. Asiri Padmadeva</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
                       <StarIcon className="w-5 h-5" />
                       <StarIcon className="w-5 h-5" />
@@ -296,21 +330,19 @@ export function MainPage2() {
                   </div>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                &quot;As an artist, I&apos;ve been blown away by the quality and versatility of BroocFab&apos;s 3D printing services.
-                  They&apos;ve helped me bring my creative visions to life in ways I never thought possible. I highly
-                  recommend their services to anyone looking to explore the world of 3D printing.&quot;
+                  &quot;BroocFab's team is incredibly knowledgeable and helpful. They walked me through the entire process, ensuring that my project was a success. The final product was exactly what I needed.&quot;
                 </p>
               </CardContent>
             </Card>
-            <Card className="flex-shrink-0 snap-center w-full max-w-md">
+            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
-                    <AvatarImage alt="@customer3" src="/placeholder-user.jpg" />
-                    <AvatarFallback>C3</AvatarFallback>
+                    <AvatarImage alt="@customer4" src="/p4.png" />
+                    <AvatarFallback>C4</AvatarFallback>
                   </Avatar>
                   <div className="space-y-1">
-                    <h4 className="font-semibold">Michael Johnson</h4>
+                    <h4 className="font-semibold">Mr. Kusal Manjula</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
                       <StarIcon className="w-5 h-5" />
                       <StarIcon className="w-5 h-5" />
@@ -321,21 +353,19 @@ export function MainPage2() {
                   </div>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                &quot;As an artist, I&apos;ve been blown away by the quality and versatility of BroocFab&apos;s 3D printing services.
-                  They&apos;ve helped me bring my creative visions to life in ways I never thought possible. I highly
-                  recommend their services to anyone looking to explore the world of 3D printing.&quot;
+                  &quot;I was amazed by the turnaround time and quality of the prints from BroocFab. They have a keen eye for detail and ensure that every aspect of the print is perfect. I wouldn't go anywhere else for my 3D printing needs.&quot;
                 </p>
               </CardContent>
             </Card>
-            <Card className="flex-shrink-0 snap-center w-full max-w-md">
+            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
-                    <AvatarImage alt="@customer3" src="/placeholder-user.jpg" />
-                    <AvatarFallback>C3</AvatarFallback>
+                    <AvatarImage alt="@customer5" src="/p5.png" />
+                    <AvatarFallback>C5</AvatarFallback>
                   </Avatar>
                   <div className="space-y-1">
-                    <h4 className="font-semibold">Michael Johnson</h4>
+                    <h4 className="font-semibold">Mrs. Niroka Herath</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
                       <StarIcon className="w-5 h-5" />
                       <StarIcon className="w-5 h-5" />
@@ -346,16 +376,15 @@ export function MainPage2() {
                   </div>
                 </div>
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                &quot;As an artist, I&apos;ve been blown away by the quality and versatility of BroocFab&apos;s 3D printing services.
-                  They&apos;ve helped me bring my creative visions to life in ways I never thought possible. I highly
-                  recommend their services to anyone looking to explore the world of 3D printing.&quot;
+                  &quot;Working with BroocFab has been an absolute pleasure. Their expertise and attention to detail have helped me achieve fantastic results in my projects. I highly recommend their services to anyone needing high-quality 3D prints.&quot;
                 </p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
-      <footer className="bg-gray-900 text-white py-6 w-full shrink-0">
+
+      <footer className="bg-gray-900 text-white py-6 w-full shrink-0 px-10">
         <div className="container flex flex-col items-center justify-between gap-4 sm:flex-row">
           <div className="flex items-center gap-2">
             <Package2Icon className="h-6 w-6" />
@@ -378,6 +407,17 @@ export function MainPage2() {
           <p className="text-sm text-gray-400">© 2024 BroocFab. All rights reserved.</p>
         </div>
       </footer>
+
+      <div className="fixed bottom-5 right-10 z-50">
+        <Link
+          className="inline-flex items-center justify-center rounded-full bg-green-500 p-4 text-white text-lg shadow-lg transition-colors hover:bg-green-600 focus:outline-none hover:focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+          href="#"
+          target="_blank"
+        >
+          <PhoneIcon className="h-7 w-7" />
+          <span className="ml-3 text-lg font-medium">Let's chat</span>
+        </Link>
+      </div>
     </div>
   )
 }
@@ -444,7 +484,6 @@ function CuboidIcon(props) {
     </svg>
   )
 }
-
 
 function GaugeIcon(props) {
   return (
