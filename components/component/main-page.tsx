@@ -306,7 +306,7 @@ export function MainPage() {
   )
 }
 
-function CuboidIcon(props: React.SVGProps<SVGSVGElement>) {
+function CuboidIcon(props: React.SVGProps<SVGSVGElement> ) {
   return (
     <svg
       {...props}
