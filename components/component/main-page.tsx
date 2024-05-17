@@ -306,10 +306,10 @@ export function MainPage() {
   )
 }
 
-function CuboidIcon(props: any ) {
+function CuboidIcon(proplets: any ) {
   return (
     <svg
-      {...props}
+      {...proplets}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -328,10 +328,10 @@ function CuboidIcon(props: any ) {
 }
 
 
-function GaugeIcon(props: any) {
+function GaugeIcon(proplets: any) {
   return (
     <svg
-      {...props}
+      {...proplets}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -349,10 +349,10 @@ function GaugeIcon(props: any) {
 }
 
 
-function Package2Icon(props: any) {
+function Package2Icon(proplets: any) {
   return (
     <svg
-      {...props}
+      {...proplets}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -371,10 +371,10 @@ function Package2Icon(props: any) {
 }
 
 
-function PaletteIcon(props: any) {
+function PaletteIcon(proplets: any) {
   return (
     <svg
-      {...props}
+      {...proplets}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -395,10 +395,10 @@ function PaletteIcon(props: any) {
 }
 
 
-function StarIcon(props: any) {
+function StarIcon(proplets: any) {
   return (
     <svg
-      {...props}
+      {...proplets}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
