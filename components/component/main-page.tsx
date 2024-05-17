@@ -27,7 +27,7 @@ import Link from "next/link"
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
 
-import React from "react";
+import * as React from 'react'
 
 export function MainPage() {
   return (
@@ -306,10 +306,9 @@ export function MainPage() {
   )
 }
 
-function CuboidIcon(props: any ) {
+function CuboidIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -328,10 +327,9 @@ function CuboidIcon(props: any ) {
 }
 
 
-function GaugeIcon(props: any) {
+function GaugeIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -349,10 +347,9 @@ function GaugeIcon(props: any) {
 }
 
 
-function Package2Icon(props: any) {
+function Package2Icon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -371,10 +368,10 @@ function Package2Icon(props: any) {
 }
 
 
-function PaletteIcon(props: any) {
+function PaletteIcon() {
   return (
     <svg
-      {...props}
+
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -395,10 +392,9 @@ function PaletteIcon(props: any) {
 }
 
 
-function StarIcon(props: any) {
+function StarIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
