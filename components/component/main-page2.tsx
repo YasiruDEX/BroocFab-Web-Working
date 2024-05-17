@@ -220,41 +220,46 @@ export function MainPage2() {
         </div>
       </section>
 
+      <section className="bg-gray-100 py-0 md:py-0 dark:bg-gray-800">
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 px-4 md:px-6">
         <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-950">
           <div className="p-6 md:p-8">
-            <h3 className="text-2xl md:text-3xl font-bold mb-2">Starter</h3>
-            <p className="text-gray-500 mb-6 dark:text-gray-400">Perfect for individuals and small teams.</p>
-            <div className="flex items-baseline mb-4">
-              <span className="text-4xl md:text-5xl font-bold">$9</span>
-              <span className="text-gray-500 text-sm md:text-base">/month</span>
+            <h3 className="text-2xl md:text-3xl font-bold mb-2">Detail Blaser</h3>
+            <p className="text-gray-500 mb-6 dark:text-gray-400">Usage of 0.3mm nozzle. 0.1mm - 0.16 layer height. Perfect for detailed printing.</p>
+            <div className="flex items-baseline mb-4 py-3">
+              <span className="text-4xl md:text-5xl font-bold py-6">27 LKR</span>
+              <span className="text-gray-500 text-sm md:text-base">/g</span>
             </div>
-            <Button className="w-full">Get Started</Button>
+            <Button className="w-full">Get Quotation</Button>
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gradient-to-r from-[#000000] to-[#4351b0]">
+          <div className="p-6 md:p-8">
+            <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm font-medium text-gray-900 dark:bg-gray-800 dark:text-gray-50 mb-4">
+                Popular
+              </div>
+            <h3 className="text-2xl md:text-3xl font-bold mb-2">Standard</h3>
+            <p className="text-gray-500 mb-6 dark:text-gray-400">Usage of 0.4mm nozzle. 0.12mm - 0.28 layer height. Perfect for prototyping.</p>
+            <div className="flex items-baseline mb-4 py-3">
+              <span className="text-4xl md:text-5xl font-bold">20 LKR</span>
+              <span className="text-gray-500 text-sm md:text-base">/g</span>
+            </div>
+            <Button className="w-full">Get Quotation</Button>
           </div>
         </div>
         <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-950">
           <div className="p-6 md:p-8">
-            <h3 className="text-2xl md:text-3xl font-bold mb-2">Pro</h3>
-            <p className="text-gray-500 mb-6 dark:text-gray-400">Ideal for growing teams and businesses.</p>
-            <div className="flex items-baseline mb-4">
-              <span className="text-4xl md:text-5xl font-bold">$29</span>
-              <span className="text-gray-500 text-sm md:text-base">/month</span>
+            <h3 className="text-2xl md:text-3xl font-bold mb-2">Hyper Detailed</h3>
+            <p className="text-gray-500 mb-6 dark:text-gray-400">Usage of 0.2mm nozzle. 0.08mm - 0.12 layer height. Perfect for hyper detailed action figures.</p>
+            <div className="flex items-baseline mb-4 py-3">
+              <span className="text-4xl md:text-5xl font-bold py-5">37 LKR</span>
+              <span className="text-gray-500 text-sm md:text-base">/g</span>
             </div>
-            <Button className="w-full">Get Started</Button>
-          </div>
-        </div>
-        <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-950">
-          <div className="p-6 md:p-8">
-            <h3 className="text-2xl md:text-3xl font-bold mb-2">Enterprise</h3>
-            <p className="text-gray-500 mb-6 dark:text-gray-400">Tailored for large organizations and teams.</p>
-            <div className="flex items-baseline mb-4">
-              <span className="text-4xl md:text-5xl font-bold">$99</span>
-              <span className="text-gray-500 text-sm md:text-base">/month</span>
-            </div>
-            <Button className="w-full">Get Started</Button>
+            <Button className="w-full">Get Quotation</Button>
           </div>
         </div>
       </div>
+    </section>
       
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
         <div className="container px-4 md:px-6">
@@ -384,10 +389,10 @@ export function MainPage2() {
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-white py-6 w-full shrink-0 px-10">
+      <footer className="bg-gray-900 text-white py-10 w-full shrink-0 px-10">
         <div className="container flex flex-col items-center justify-between gap-4 sm:flex-row">
           <div className="flex items-center gap-2">
-            <Package2Icon className="h-6 w-6" />
+            <Package2Icon className="h-7 w-7" />
             <span className="font-semibold text-lg">BroocFab</span>
           </div>
           <nav className="flex items-center gap-4">
@@ -580,16 +585,17 @@ function StarIcon(props) {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
+      fill="orange" // Set the fill color to orange
+      stroke="orange" // Optional: Set the stroke color to orange to match the fill
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
       <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
     </svg>
-  )
+  );
 }
+
 
 
 function WalletIcon(props) {
