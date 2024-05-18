@@ -27,6 +27,7 @@ import Link from "next/link"
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
+import { CollapsibleTrigger, CollapsibleContent, Collapsible } from "@/components/ui/collapsible"
 
 export function MainPage2() {
   return (
@@ -39,7 +40,7 @@ export function MainPage2() {
           </div>
           <a
             className="inline-flex h-10 items-center justify-center rounded-md bg-green-500 px-6 text-sm font-medium text-white shadow transition-colors hover:bg-green-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-700 disabled:pointer-events-none disabled:opacity-50"
-            href="#"
+            href="https://api.whatsapp.com/send/?phone=94702534485&text=Hi%21+I+have+a+question+about...&type=phone_number&app_absent=0"
           >
             Get Quotation
             <PhoneIcon className="ml-2 h-5 w-5" />
@@ -50,9 +51,9 @@ export function MainPage2() {
         <div className="container px-4 md:px-6 text-white">
           <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-4">
-              <h1 className="text-3x1 font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-7xl">
-                Transform your concepts into tangible reality today!
-              </h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-7xl">
+              Transform your concepts into <span className="text-blue-400 hover:text-blue-300">tangible</span> reality today!
+            </h1>
               <p className="max-w-[600px] text-lg">
                 Experience the power of 3D printing with BroocFab. From custom prototypes to unique personalized items,
                 we bring your ideas to life.
@@ -60,13 +61,13 @@ export function MainPage2() {
               <div className="flex flex-col gap-2 sm:flex-row">
                 <Link
                   className="inline-flex h-12 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-[#2c5282] shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-                  href="#"
+                  href="https://api.whatsapp.com/send/?phone=94702534485&text=Hi%21+I+have+a+question+about...&type=phone_number&app_absent=0"
                 >
                   Start Printing
                 </Link>
                 <a
                   className="inline-flex h-12 items-center justify-center rounded-md bg-green-500 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-green-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-700 disabled:pointer-events-none disabled:opacity-50"
-                  href="#"
+                  href="https://api.whatsapp.com/send/?phone=94702534485&text=Hi%21+I+have+a+question+about...&type=phone_number&app_absent=0"
                 >
                   Get Quotation
                   <PhoneIcon className="ml-2 h-5 w-5" />
@@ -75,7 +76,7 @@ export function MainPage2() {
             </div>
             <img
               alt="Hero"
-              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover"
+              className="mx-auto aspect-square overflow-hidden rounded-xl object-cover transition-transform transition-filter duration-300 ease-in-out hover:brightness-110 hover:scale-105 "
               height="550"
               src="/main.jpg"
               width="550"
@@ -163,7 +164,7 @@ export function MainPage2() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+      <section className="w-full py-12 md:py-24 lg:pt-32 lg:pb-0 bg-gray-100 dark:bg-gray-800">
         <div className="container px-10 md:px-12">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -176,53 +177,55 @@ export function MainPage2() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-8">
             <img
               alt="3D Printed Item"
-              className="aspect-[3/2] object-cover rounded-lg"
+              className="aspect-[3/2] object-cover rounded-lg transition-transform transition-filter duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:brightness-110"
               height="400"
               src="/show1.jpg"
               width="600"
             />
             <img
               alt="3D Printed Item"
-              className="aspect-[3/2] object-cover rounded-lg"
+              className="aspect-[3/2] object-cover rounded-lg transition-transform transition-filter duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:brightness-110"
               height="400"
               src="/show2.jpg"
               width="600"
             />
             <img
               alt="3D Printed Item"
-              className="aspect-[3/2] object-cover rounded-lg"
+              className="aspect-[3/2] object-cover rounded-lg transition-transform transition-filter duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:brightness-110"
               height="400"
               src="/show3.jpg"
               width="600"
             />
             <img
               alt="3D Printed Item"
-              className="aspect-[3/2] object-cover rounded-lg"
+              className="aspect-[3/2] object-cover rounded-lg transition-transform transition-filter duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:brightness-110"
               height="400"
-              src="/show3.jpg"
+              src="/show4.jpg"
               width="600"
             />
             <img
               alt="3D Printed Item"
-              className="aspect-[3/2] object-cover rounded-lg"
+              className="aspect-[3/2] object-cover rounded-lg transition-transform transition-filter duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:brightness-110"
               height="400"
-              src="/show1.jpg"
+              src="/show5.jpg"
               width="600"
             />
             <img
               alt="3D Printed Item"
-              className="aspect-[3/2] object-cover rounded-lg"
+              className="aspect-[3/2] object-cover rounded-lg transition-transform transition-filter duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:brightness-110"
               height="400"
-              src="/show2.jpg"
+              src="/show6.jpg"
               width="600"
             />
           </div>
+
+
         </div>
       </section>
 
-      <section className="bg-gray-100 py-0 md:py-0 dark:bg-gray-800">
+      <section className="bg-gray-100 pb-10 pt-20 md:pt-40 md:pb-40 dark:bg-gray-800">
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 px-4 md:px-6">
-        <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-950">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-950 hover:bg-gray-900">
           <div className="p-6 md:p-8">
             <h3 className="text-2xl md:text-3xl font-bold mb-2">Detail Blaser</h3>
             <p className="text-gray-500 mb-6 dark:text-gray-400">Usage of 0.3mm nozzle. 0.1mm - 0.16 layer height. Perfect for detailed printing.</p>
@@ -233,7 +236,7 @@ export function MainPage2() {
             <Button className="w-full">Get Quotation</Button>
           </div>
         </div>
-        <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gradient-to-r from-[#000000] to-[#4351b0]">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gradient-to-r from-[#000000] to-[#4351b0] hover:from-[#000025] hover:to-[#4351b0]">
           <div className="p-6 md:p-8">
             <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm font-medium text-gray-900 dark:bg-gray-800 dark:text-gray-50 mb-4">
                 Popular
@@ -247,7 +250,7 @@ export function MainPage2() {
             <Button className="w-full">Get Quotation</Button>
           </div>
         </div>
-        <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-950">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-950 hover:bg-gray-900">
           <div className="p-6 md:p-8">
             <h3 className="text-2xl md:text-3xl font-bold mb-2">Hyper Detailed</h3>
             <p className="text-gray-500 mb-6 dark:text-gray-400">Usage of 0.2mm nozzle. 0.08mm - 0.12 layer height. Perfect for hyper detailed action figures.</p>
@@ -260,6 +263,60 @@ export function MainPage2() {
         </div>
       </div>
     </section>
+
+    <div className="flex flex-col items-center justify-center bg-gradient-to-r from-[#0a0e24] to-[#2c3678] p-20">
+      <div className="w-full max-w-2xl space-y-4">
+        <h1 className="text-4xl font-bold leading-tight text-center">Send your model files & Get a Quote</h1>
+        <p className="text-gray-400 text-center">
+          We make sure to provide you the best 3D printing service ensuring the print quality. We will be manually
+          inspecting your 3D model to provide you the best price by calculating the material cost and the print time.
+        </p>
+        <div className="flex justify-center space-x-4">
+          <div className="group relative">
+            <FacebookIcon className="text-blue-600 group-hover:scale-110 transition-transform" />
+            <div className="absolute top-full mt-2 bg-blue-600 text-white px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+              Facebook
+            </div>
+          </div>
+          <div className="group relative">
+            <InstagramIcon className="text-pink-600 group-hover:scale-110 transition-transform" />
+            <div className="absolute top-full mt-2 bg-pink-600 text-white px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+              Instagram
+            </div>
+          </div>
+          <div className="group relative">
+            <LinkedinIcon className="text-blue-500 group-hover:scale-110 transition-transform" />
+            <div className="absolute top-full mt-2 bg-blue-500 text-white px-2 py-1 rounded text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+              LinkedIn
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex space-x-10 mt-8 items-start">
+        <div className="flex flex-col items-center justify-center bg-gradient-to-br from-[#25d366] hover:from-[#2af777] hover:to-[#17823f] to-[#157539] text-white rounded-md p-6 shadow-lg w-full max-w-[200px] group px-8">
+          <PhoneIcon className="h-8 w-8 group-hover:scale-110 transition-transform" />
+          <div className="font-semibold group-hover:animate-typing">WhatsApp</div>
+          <div className="text-lg group-hover:animate-typing">070 2534485</div>
+          <Button
+            className="text-white bg-transparent border-none group-hover:animate-typing rounded-md px-4 py-2"
+            variant="ghost"
+          >
+            Click to send
+          </Button>
+        </div>
+        <div className="flex flex-col items-center justify-center bg-gradient-to-br from-[#007bff] hover:from-[#268fff] to-[#00458f] hover:to-[#025ab8] text-white rounded-md p-6 shadow-lg w-full max-w-[200px] group">
+          <MailIcon className="h-8 w-8 group-hover:scale-110 transition-transform" />
+          <div className="font-semibold group-hover:animate-typing">Email</div>
+          <div className="text-lg group-hover:animate-typing">info@broocfab.lk</div>
+          <Button
+            className="text-white bg-transparent border-none group-hover:animate-typing rounded-md px-4 py-2"
+            variant="ghost"
+          >
+            Click to send
+          </Button>
+        </div>
+      </div>
+    </div>
       
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
         <div className="container px-4 md:px-6">
@@ -270,7 +327,7 @@ export function MainPage2() {
             </p>
           </div>
           <div className="flex gap-8 overflow-x-auto py-8 snap-x snap-mandatory">
-            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33]">
+            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
@@ -293,7 +350,7 @@ export function MainPage2() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33]">
+            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
@@ -316,7 +373,7 @@ export function MainPage2() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33]">
+            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
@@ -339,7 +396,7 @@ export function MainPage2() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33]">
+            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
@@ -362,7 +419,7 @@ export function MainPage2() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33]">
+            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
@@ -388,6 +445,95 @@ export function MainPage2() {
           </div>
         </div>
       </section>
+
+      <section className="w-full py-12 md:py-24 lg:py-32 flex items-center justify-center">
+      <div className="container max-w-4xl px-4 md:px-6">
+        <div className="space-y-4 text-center">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Frequently Asked Questions</h2>
+          <h4 className="text-lg font-bold tracking-tighter sm:text-lg md:text-lg text-gray-500 md:text-lg/relaxed lg:text-base/relaxed lg:text-lg/relaxed dark:text-gray-400">Get answers to the most common questions about our 3D printing services.</h4>
+        </div>
+        <div className="mt-12 space-y-4">
+          <Collapsible className="rounded-md border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
+            <CollapsibleTrigger className="flex w-full items-center justify-between space-x-4 px-4 py-3">
+              <h4 className="text-lg font-semibold">What file formats can I send for 3D printing?</h4>
+              <CollapsibleTrigger asChild>
+                <Button size="sm" variant="ghost">
+                  <ChevronDownIcon className="h-5 w-5 transition-transform group-data-[state=open]:rotate-180" />
+                </Button>
+              </CollapsibleTrigger>
+            </CollapsibleTrigger>
+            <CollapsibleContent className="border-t border-gray-200 px-4 py-3 dark:border-gray-800">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                We recommend you to send the files in .STL or .OBJ format.
+              </p>
+            </CollapsibleContent>
+          </Collapsible>
+          <Collapsible className="rounded-md border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
+            <CollapsibleTrigger className="flex w-full items-center justify-between space-x-4 px-4 py-3">
+              <h4 className="text-lg font-semibold">How long does it take to receive the quotation?</h4>
+              <CollapsibleTrigger asChild>
+                <Button size="sm" variant="ghost">
+                  <ChevronDownIcon className="h-5 w-5 transition-transform group-data-[state=open]:rotate-180" />
+                </Button>
+              </CollapsibleTrigger>
+            </CollapsibleTrigger>
+            <CollapsibleContent className="border-t border-gray-200 px-4 py-3 dark:border-gray-800">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                We are trying our best to deliver it at the earliest, worst case would be in 24 hours maximum. If not,
+                please contact us via 0702534485.
+              </p>
+            </CollapsibleContent>
+          </Collapsible>
+          <Collapsible className="rounded-md border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
+            <CollapsibleTrigger className="flex w-full items-center justify-between space-x-4 px-4 py-3">
+              <h4 className="text-lg font-semibold">What payment types are accepted?</h4>
+              <CollapsibleTrigger asChild>
+                <Button size="sm" variant="ghost">
+                  <ChevronDownIcon className="h-5 w-5 transition-transform group-data-[state=open]:rotate-180" />
+                </Button>
+              </CollapsibleTrigger>
+            </CollapsibleTrigger>
+            <CollapsibleContent className="border-t border-gray-200 px-4 py-3 dark:border-gray-800">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                We accept bank transfers, හෙළPay, VISA, MASTER, AMEX cards, eZcash and mCash, Frimi, iPay, Sampath Bank
+                (Vishwa) or HNB Bank online transfers.
+              </p>
+            </CollapsibleContent>
+          </Collapsible>
+          <Collapsible className="rounded-md border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
+            <CollapsibleTrigger className="flex w-full items-center justify-between space-x-4 px-4 py-3">
+              <h4 className="text-lg font-semibold">How long will it take to deliver the print?</h4>
+              <CollapsibleTrigger asChild>
+                <Button size="sm" variant="ghost">
+                  <ChevronDownIcon className="h-5 w-5 transition-transform group-data-[state=open]:rotate-180" />
+                </Button>
+              </CollapsibleTrigger>
+            </CollapsibleTrigger>
+            <CollapsibleContent className="border-t border-gray-200 px-4 py-3 dark:border-gray-800">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                We deliver 3D printed objects to any part of Sri Lanka. It will take 1-2 days to receive the objects
+                after print completion.
+              </p>
+            </CollapsibleContent>
+          </Collapsible>
+          <Collapsible className="rounded-md border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
+            <CollapsibleTrigger className="flex w-full items-center justify-between space-x-4 px-4 py-3">
+              <h4 className="text-lg font-semibold">Are my files kept confidential?</h4>
+              <CollapsibleTrigger asChild>
+                <Button size="sm" variant="ghost">
+                  <ChevronDownIcon className="h-5 w-5 transition-transform group-data-[state=open]:rotate-180" />
+                </Button>
+              </CollapsibleTrigger>
+            </CollapsibleTrigger>
+            <CollapsibleContent className="border-t border-gray-200 px-4 py-3 dark:border-gray-800">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                Yes, of course, we will never share your files with a 3rd party.
+              </p>
+            </CollapsibleContent>
+          </Collapsible>
+        </div>
+      </div>
+    </section>
 
       <footer className="bg-gray-900 text-white py-10 w-full shrink-0 px-10">
         <div className="container flex flex-col items-center justify-between gap-4 sm:flex-row">
@@ -416,14 +562,35 @@ export function MainPage2() {
       <div className="fixed bottom-5 right-10 z-50">
         <Link
           className="inline-flex items-center justify-center rounded-full bg-green-500 p-4 text-white text-lg shadow-lg transition-colors hover:bg-green-600 focus:outline-none hover:focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-          href="#"
+          href="https://api.whatsapp.com/send/?phone=94702534485&text=Hi%21+I+have+a+question+about...&type=phone_number&app_absent=0"
           target="_blank"
         >
           <PhoneIcon className="h-7 w-7" />
           <span className="ml-3 text-lg font-medium">Let&apos;s chat</span>
         </Link>
       </div>
+
     </div>
+    
+  )
+}
+
+function ChevronDownIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="m6 9 6 6 6-6" />
+    </svg>
   )
 }
 
@@ -614,6 +781,110 @@ function WalletIcon(props) {
     >
       <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
       <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+    </svg>
+  )
+}
+
+function FacebookIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
+  )
+}
+
+
+function InstagramIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  )
+}
+
+
+function LinkedinIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  )
+}
+
+
+function MailIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="20" height="16" x="2" y="4" rx="2" />
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+    </svg>
+  )
+}
+
+function YoutubeIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+      <path d="m10 15 5-3-5-3z" />
     </svg>
   )
 }
