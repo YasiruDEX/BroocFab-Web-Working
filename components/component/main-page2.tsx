@@ -50,7 +50,7 @@ export function MainPage2() {
               </p>
               <div className="flex items-baseline mb-4 py-3">
                 <span className="text-4xl md:text-5xl font-bold py-6">
-                  27 LKR
+                  35 LKR
                 </span>
                 <span className="text-gray-500 text-sm md:text-base">/g</span>
               </div>
@@ -74,7 +74,7 @@ export function MainPage2() {
                 prototyping.
               </p>
               <div className="flex items-baseline mb-4 py-3">
-                <span className="text-4xl md:text-5xl font-bold">20 LKR</span>
+                <span className="text-4xl md:text-5xl font-bold">23 LKR</span>
                 <span className="text-gray-500 text-sm md:text-base">/g</span>
               </div>
               <a
@@ -97,7 +97,7 @@ export function MainPage2() {
               </p>
               <div className="flex items-baseline mb-4 py-3">
                 <span className="text-4xl md:text-5xl font-bold py-5">
-                  37 LKR
+                  50 LKR
                 </span>
                 <span className="text-gray-500 text-sm md:text-base">/g</span>
               </div>
@@ -188,11 +188,11 @@ export function MainPage2() {
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
-                    <AvatarImage alt="@customer1" src="/p1.png" />
+                    <AvatarImage alt="@customer1" src="/placeholder-user.jpg" />
                     <AvatarFallback>C1</AvatarFallback>
                   </Avatar>
                   <div className="space-y-1">
-                    <h4 className="font-semibold">Mr. Nihal Edirisignhe</h4>
+                    <h4 className="font-semibold">Unknown Client</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
                       <StarIcon className="w-5 h-5" />
                       <StarIcon className="w-5 h-5" />
@@ -214,11 +214,11 @@ export function MainPage2() {
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
-                    <AvatarImage alt="@customer2" src="/p2.png" />
+                    <AvatarImage alt="@customer2" src="/placeholder-user.jpg" />
                     <AvatarFallback>C2</AvatarFallback>
                   </Avatar>
                   <div className="space-y-1">
-                    <h4 className="font-semibold">Mr. Samith Thennakoon</h4>
+                    <h4 className="font-semibold">Unknown Client</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
                       <StarIcon className="w-5 h-5" />
                       <StarIcon className="w-5 h-5" />
@@ -240,11 +240,11 @@ export function MainPage2() {
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
-                    <AvatarImage alt="@customer3" src="/p3.png" />
+                    <AvatarImage alt="@customer3" src="/placeholder-user.jpg" />
                     <AvatarFallback>C3</AvatarFallback>
                   </Avatar>
                   <div className="space-y-1">
-                    <h4 className="font-semibold">Mr. Asiri Padmadeva</h4>
+                    <h4 className="font-semibold">Unknown Client</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
                       <StarIcon className="w-5 h-5" />
                       <StarIcon className="w-5 h-5" />
@@ -266,11 +266,11 @@ export function MainPage2() {
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
-                    <AvatarImage alt="@customer4" src="/p4.png" />
+                    <AvatarImage alt="@customer4" src="/placeholder-user.jpg" />
                     <AvatarFallback>C4</AvatarFallback>
                   </Avatar>
                   <div className="space-y-1">
-                    <h4 className="font-semibold">Mr. Kusal Manjula</h4>
+                    <h4 className="font-semibold">Unknown Client</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
                       <StarIcon className="w-5 h-5" />
                       <StarIcon className="w-5 h-5" />
@@ -292,11 +292,11 @@ export function MainPage2() {
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
-                    <AvatarImage alt="@customer5" src="/p5.png" />
+                    <AvatarImage alt="@customer5" src="/placeholder-user.jpg" />
                     <AvatarFallback>C5</AvatarFallback>
                   </Avatar>
                   <div className="space-y-1">
-                    <h4 className="font-semibold">Mrs. Niroka Herath</h4>
+                    <h4 className="font-semibold">Unknown Client</h4>
                     <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
                       <StarIcon className="w-5 h-5" />
                       <StarIcon className="w-5 h-5" />
