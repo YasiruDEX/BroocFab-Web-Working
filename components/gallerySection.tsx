@@ -93,6 +93,13 @@ export default function GallerySection() {
                 src="/show10.jpg"
                 width="600"
               />
+              <img
+                alt="3D Printed Item"
+                className="aspect-[3/2] object-cover rounded-lg transition-transform transition-filter duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:brightness-110"
+                height="400"
+                src="/show11.jpg"
+                width="600"
+              />
             </>
           )}
         </div>
