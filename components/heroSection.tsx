@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="w-full py-12 md:py-10 lg:py-10 mt-16 relative overflow-hidden">
+      <div className="blur-sm absolute inset-0 bg-black bg-opacity-50 z-0">
       <video 
         className="absolute inset-0 w-full h-full object-cover z-0" 
         autoPlay 
@@ -14,6 +15,7 @@ export default function HeroSection() {
         <source src="/promo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      </div>
       <div className="relative px-4 md:px-6 text-white z-10">
         <div className="grid items-center px-10 gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
