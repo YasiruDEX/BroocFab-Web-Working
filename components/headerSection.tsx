@@ -19,7 +19,7 @@ import {
 export default function HeaderSection() {
   return (
     <header className="bg-gray-900/65 text-white py-4 px-4 md:px-6 fixed top-0 left-0 right-0 backdrop-blur-sm z-50 w-full">
-      <div className="flex items-center justify-between w-full max-w-screen-xl mx-auto">
+      <div className="flex items-center justify-between w-full ">
         <div className="flex items-center gap-2">
           <Package2Icon className="h-7 w-7" />
           <span className="font-semibold text-lg">BroocFab</span>
