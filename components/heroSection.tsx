@@ -49,7 +49,7 @@ export default function HeroSection() {
           </div>
           <img
             alt="Hero"
-            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover shadow-lg shadow-slate-800 transition-transform transition-filter duration-300 ease-in-out hover:brightness-110 hover:scale-105"
+            className="mx-auto aspect-square overflow-hidden rounded-xl object-cover opacity-95 shadow-slate-800 transition-transform transition-filter duration-300 ease-in-out hover:brightness-110 hover:scale-105"
             height="550"
             src="/main.jpg"
             width="550"
