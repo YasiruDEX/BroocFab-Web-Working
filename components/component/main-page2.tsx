@@ -38,6 +38,14 @@ export function MainPage2() {
       <GallerySection />
 
       <section className="bg-gray-100 pb-10 pt-20 md:pt-40 md:pb-40 dark:bg-gray-800">
+        <div className="text-center mb-12">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            Our Pricing Plans
+          </h1>
+          <p className="mt-2 text-gray-500 dark:text-gray-400 px-10">
+            Choose the best plan that suits your 3D printing needs.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 px-6 md:px-10">
           <div className="bg-white rounded-lg shadow-md overflow-hidden dark:bg-gray-950 hover:bg-gray-900">
             <div className="p-6 md:p-8">
@@ -183,8 +191,8 @@ export function MainPage2() {
               BroocFab.
             </p>
           </div>
-          <div className="flex gap-8 overflow-x-auto py-8 snap-x snap-mandatory">
-            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-8">
+            <Card className="py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
@@ -210,7 +218,7 @@ export function MainPage2() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
+            <Card className="py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
@@ -236,7 +244,7 @@ export function MainPage2() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
+            <Card className="py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
@@ -262,7 +270,7 @@ export function MainPage2() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
+            <Card className="py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
@@ -288,7 +296,7 @@ export function MainPage2() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="flex-shrink-0 snap-center w-full max-w-md py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
+            <Card className="py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
               <CardContent>
                 <div className="flex items-start gap-4">
                   <Avatar className="w-12 h-12 border">
@@ -311,6 +319,33 @@ export function MainPage2() {
                   Their expertise and attention to detail have helped me achieve
                   fantastic results in my projects. I highly recommend their
                   services to anyone needing high-quality 3D prints.&quot;
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="py-5 bg-gradient-to-r from-[#000000] to-[#181d33] hover:from-[#000030] hover:to-[#181d33]">
+              <CardContent>
+                <div className="flex items-start gap-4">
+                  <Avatar className="w-12 h-12 border">
+                    <AvatarImage alt="@customer6" src="/placeholder-user.jpg" />
+                    <AvatarFallback>C6</AvatarFallback>
+                  </Avatar>
+                  <div className="space-y-1">
+                    <h4 className="font-semibold">Unknown Client</h4>
+                    <div className="flex items-center gap-1 text-gray-900 dark:text-gray-50">
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                      <StarIcon className="w-5 h-5" />
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-4 text-gray-500 dark:text-gray-400">
+                  &quot;The team at BroocFab exceeded my expectations with their
+                  exceptional service and attention to detail. The quality of
+                  their prints is second to none, and they delivered ahead of
+                  schedule. I highly recommend them for all your 3D printing
+                  needs.&quot;
                 </p>
               </CardContent>
             </Card>
