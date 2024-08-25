@@ -15,7 +15,7 @@ export function MainPage2() {
       <HeroSection />
       <CardSection />
       <section className="w-full py-12 md:py-24 lg:pt-32 lg:pb-0 bg-gray-100 dark:bg-gray-800">
-        <div className="container px-10 md:px-12">
+        <div className="px-10 md:px-12">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Gallery of 3D Printed Creations

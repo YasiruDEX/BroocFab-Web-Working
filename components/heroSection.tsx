@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="w-full py-12 md:py-10 lg:py-10 bg-gradient-to-r from-[#2c5282] to-[#4c6ef5] mt-16">
-      <div className="container px-4 md:px-6 text-white">
-        <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
+      <div className="px-4 md:px-6 text-white">
+        <div className="grid items-center px-10 gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-7xl">
               Transform your concepts into{" "}
