@@ -246,7 +246,7 @@ export default function StructureLabLanding() {
               File Requirements
             </h2>
             <p className="text-xl text-slate-600 max-w-[800px] mx-auto">
-              What you need to send us and what you'll receive in return.
+              What you need to send us and what you&apos;ll receive in return.
             </p>
           </div>
 
