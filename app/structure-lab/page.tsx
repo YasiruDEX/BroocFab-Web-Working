@@ -298,13 +298,13 @@ export default function StructureLabLanding() {
                     <p className="text-sm text-slate-600">Primary deliverable - hand-finished</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-3">
+                {/* <div className="flex items-start space-x-3">
                   <Shield className="h-5 w-5 text-slate-600 mt-1" />
                   <div>
                     <p className="font-medium">Free protective casing</p>
                     <p className="text-sm text-slate-600">Keeps your model safe during transport</p>
                   </div>
-                </div>
+                </div> */}
                 <div className="flex items-start space-x-3">
                   <FileText className="h-5 w-5 text-slate-600 mt-1" />
                   <div>
