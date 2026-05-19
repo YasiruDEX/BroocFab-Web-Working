@@ -100,7 +100,7 @@ export default function HeroSection() {
               {/* Product Image styled cleanly inside minimal white border */}
               <div className="relative w-full h-full rounded-xl overflow-hidden bg-slate-950 border border-slate-800 shadow-inner">
                 <img
-                  alt="BroocFab Precision Scale Fabrication Model"
+                  alt="Precision 3D Printed Scale Model & Rapid Prototyping by BroocFab Sri Lanka"
                   src="/main.jpg"
                   className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-102"
                 />

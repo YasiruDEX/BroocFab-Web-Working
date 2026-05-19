@@ -17,6 +17,19 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Structure Lab | Architectural & Functional 3D Models Sri Lanka",
+  description: "High-performance physical scale models and structural mocks for engineering, architecture, and design. Expert 3D fabrication services by BroocFab Colombo.",
+  keywords: [
+    "Architectural 3D printing Sri Lanka",
+    "Scale models Colombo",
+    "Engineering prototyping Sri Lanka",
+    "Structural mockups Sri Lanka",
+    "Structure Lab BroocFab"
+  ]
+};
 
 export default function StructureLabLanding() {
   const whatsappLink =

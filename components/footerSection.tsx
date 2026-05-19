@@ -38,9 +38,9 @@ export default function FooterSection() {
           <div className="lg:col-span-4 space-y-4">
             <Link href="/" className="block w-fit">
               <img 
-                src="/logo_white.png" 
+                src="/logo_main.png" 
                 alt="BroocFab Logo" 
-                className="h-10 sm:h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+                className="h-10 sm:h-12 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
               />
             </Link>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
