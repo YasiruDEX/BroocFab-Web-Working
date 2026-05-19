@@ -1,18 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { 
-  Phone, 
-  Sparkles, 
-  Upload, 
-  FileText, 
-  Settings, 
+import {
+  Phone,
+  Sparkles,
+  Upload,
+  FileText,
+  Settings,
   Truck,
   Cpu,
   Layers,
   HeartPulse,
   Wrench,
-  Boxes
+  Boxes,
 } from "lucide-react";
 
 import HeaderSection from "../headerSection";
@@ -25,65 +25,63 @@ import QnaSection from "../qnaSection";
 import FooterSection from "../footerSection";
 
 export function MainPage2() {
-  
   const steps = [
     {
       num: "01",
       title: "Upload CAD Design",
       desc: "Submit your STL, STEP, or OBJ model securely through our quick inquiry uploader.",
-      icon: Upload
+      icon: Upload,
     },
     {
       num: "02",
       title: "Quick Engineering Review",
       desc: "Our workshop leads inspect file meshes and specs to compile an FDM or SLA quote in under 2 hours.",
-      icon: FileText
+      icon: FileText,
     },
     {
       num: "03",
       title: "Calibrated Fabrication",
       desc: "We spin up our professional print farm to execute parts with tight dimensional accuracy.",
-      icon: Settings
+      icon: Settings,
     },
     {
       num: "04",
       title: "Insured Direct Delivery",
       desc: "Parts are physical-caliper tolerance verified, packed securely, and shipped via courier island-wide.",
-      icon: Truck
-    }
+      icon: Truck,
+    },
   ];
 
   const industries = [
     {
       title: "Engineering & Robotics",
       desc: "Rigid FDM structural prints and high-stress connectors built for robotics assemblies and custom sensor brackets.",
-      icon: Cpu
+      icon: Cpu,
     },
     {
       title: "Architectural Planning",
       desc: "Pristine visual spatial models, structural mockups, and high-detail matte scales for client reviews.",
-      icon: Layers
+      icon: Layers,
     },
     {
       title: "Medical & Dental Pilots",
       desc: "Highly detailed resin master models, dental guides, and high-accuracy diagnostic surgical replicas.",
-      icon: HeartPulse
+      icon: HeartPulse,
     },
     {
       title: "Consumer Product Casings",
       desc: "Rapid form and fit prototypes, handheld ergonomics controllers, and snap-fit electronics enclosures.",
-      icon: Wrench
+      icon: Wrench,
     },
     {
       title: "Startup Production Runs",
       desc: "Scale functional prototypes into low-volume batches of 10 to 1,000 units on-demand with zero tooling capital.",
-      icon: Boxes
-    }
+      icon: Boxes,
+    },
   ];
 
   return (
     <div className="flex flex-col min-h-screen bg-white text-slate-900 selection:bg-blue-600 selection:text-white relative">
-      
       {/* Header navbar */}
       <HeaderSection />
 
@@ -94,7 +92,10 @@ export function MainPage2() {
       <CardSection />
 
       {/* Custom Block 1: How It Works Flow (Clean Light Layout) */}
-      <section id="how-it-works" className="w-full py-20 bg-white border-b border-slate-200/60 relative">
+      <section
+        id="how-it-works"
+        className="w-full py-20 bg-white border-b border-slate-200/60 relative"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="space-y-4 text-center max-w-3xl mx-auto mb-16">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-blue-100 bg-blue-50 text-blue-600 text-xs font-semibold uppercase tracking-wider">
@@ -105,7 +106,8 @@ export function MainPage2() {
               How It Works
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              We translate digital files into mechanical-grade physical parts in four simple steps.
+              We translate digital files into mechanical-grade physical parts in
+              four simple steps.
             </p>
           </div>
 
@@ -114,15 +116,22 @@ export function MainPage2() {
             {steps.map((step, idx) => {
               const Icon = step.icon;
               return (
-                <div key={idx} className="relative group rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm hover:border-slate-300 hover:shadow-md transition-all duration-300">
+                <div
+                  key={idx}
+                  className="relative group rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm hover:border-slate-300 hover:shadow-md transition-all duration-300"
+                >
                   <div className="absolute top-4 right-4 text-slate-200 font-mono font-bold text-4xl group-hover:text-blue-500/10 transition-colors">
                     {step.num}
                   </div>
                   <div className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 text-blue-600 mb-5">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <h3 className="text-base font-bold text-slate-900 mb-2">{step.title}</h3>
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">{step.desc}</p>
+                  <h3 className="text-base font-bold text-slate-900 mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    {step.desc}
+                  </p>
                 </div>
               );
             })}
@@ -142,7 +151,8 @@ export function MainPage2() {
               Industries Served
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              Engineered fabrications designed to accelerate prototyping and research across Sri Lanka.
+              Engineered fabrications designed to accelerate prototyping and
+              research across Sri Lanka.
             </p>
           </div>
 
@@ -151,12 +161,19 @@ export function MainPage2() {
             {industries.map((ind, idx) => {
               const Icon = ind.icon;
               return (
-                <div key={idx} className="relative group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 hover:shadow-md transition-all duration-300">
+                <div
+                  key={idx}
+                  className="relative group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:border-slate-300 hover:shadow-md transition-all duration-300"
+                >
                   <div className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-indigo-50 border border-indigo-100 text-indigo-600 mb-4">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <h3 className="text-base font-bold text-slate-900 mb-2">{ind.title}</h3>
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">{ind.desc}</p>
+                  <h3 className="text-base font-bold text-slate-900 mb-2">
+                    {ind.title}
+                  </h3>
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    {ind.desc}
+                  </p>
                 </div>
               );
             })}
@@ -196,7 +213,6 @@ export function MainPage2() {
           </span>
         </a>
       </div>
-
     </div>
   );
 }
