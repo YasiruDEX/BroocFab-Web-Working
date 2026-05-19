@@ -21,7 +21,6 @@ import CardSection from "../cardSection";
 import GallerySection from "../gallerySection";
 import PricingSection from "../pricingSection";
 import SendModelSection from "../sendModelSection";
-import ReviewsSection from "../reviewsSection";
 import QnaSection from "../qnaSection";
 import FooterSection from "../footerSection";
 
@@ -173,9 +172,6 @@ export function MainPage2() {
 
       {/* RFQ Intake Uploader */}
       <SendModelSection />
-
-      {/* Verified Reviews */}
-      <ReviewsSection />
 
       {/* FAQ Accordions */}
       <QnaSection />
