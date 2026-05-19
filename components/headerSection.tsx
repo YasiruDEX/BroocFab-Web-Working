@@ -53,7 +53,7 @@ export default function HeaderSection() {
         }`}
       >
         <div className="px-5 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-14 sm:h-16 transition-all duration-500">
+          <div className="flex items-center justify-between h-16 sm:h-[72px] transition-all duration-500">
             
             {/* Primary High-Res Logo - Significant Brand Scale */}
             <Link href="/" className="flex items-center gap-2 group shrink-0 py-1 mr-4 sm:mr-6">
@@ -61,7 +61,7 @@ export default function HeaderSection() {
                 src="/logo_main.png" 
                 alt="BroocFab Logo" 
                 className={`w-auto object-contain transition-all duration-500 group-hover:scale-[1.02] ${
-                  scrolled ? "h-[38px] sm:h-[44px]" : "h-[44px] sm:h-[50px]"
+                  scrolled ? "h-[46px] sm:h-[52px]" : "h-[54px] sm:h-[62px]"
                 }`} 
               />
             </Link>
