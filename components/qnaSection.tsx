@@ -1,116 +1,105 @@
-import {
-  CollapsibleTrigger,
-  CollapsibleContent,
-  Collapsible,
-} from "@/components/ui/collapsible";
-import { ChevronDownIcon } from "./icons";
-import { Button } from "@/components/ui/button";
+"use client";
+
+import { useState } from "react";
+import { HelpCircle, Plus, Minus } from "lucide-react";
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
 
 export default function QnaSection() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const faqs: FAQItem[] = [
+    {
+      question: "What file formats do you accept for 3D printing?",
+      answer: "We accept all standard engineering CAD and mesh formats: .STL, .STEP, .OBJ, and .3MF. For standard mechanical prints, STL or 3MF is highly recommended. For precise functional assemblies requiring exact dimensional integrity, STEP files are preferred."
+    },
+    {
+      question: "How long does fabrication and delivery take?",
+      answer: "Typical turnaround time is 24 to 48 hours depending on print bed volumes and current queue schedules. Once production is completed, we use local insured courier networks to deliver island-wide in Sri Lanka, which usually takes 1 to 2 business days."
+    },
+    {
+      question: "Which material should I choose for my project?",
+      answer: "Choose PLA for rapid concept prototypes, detailed visual art, or architectural drafts. Select PETG for structural parts, outdoor applications, or functional brackets. Select TPU for impact-absorbing bumpers, flexible gaskets, or dampeners. Use SLA Resin for hyper-detailed, high-resolution models and miniatures."
+    },
+    {
+      question: "Can you help optimize my model file before printing?",
+      answer: "Yes. Our engineering desk conducts a manual Design-for-Manufacturability (DFM) slice analysis on every intake model. If we detect weak structural thresholds, dangerous overhang angles, or slicing errors, we will contact you directly with recommendations to optimize the design."
+    },
+    {
+      question: "Do you offer bulk manufacturing or volume scaling discounts?",
+      answer: "Yes, we support on-demand batch manufacturing. We offer tiered volume scaling discounts: 15% off for batch runs (6 to 50 parts) and up to 30% off for large volumes (50+ parts), all without requiring expensive tooling setup fees."
+    },
+    {
+      question: "What payment methods do you accept?",
+      answer: "We support a range of secure local payment options, including Bank Transfers (HNB, Sampath, etc.), VISA, MasterCard, AMEX online transfers, eZcash, and FriMi online transfers."
+    }
+  ];
+
+  const toggleAccordion = (idx: number) => {
+    setOpenIndex(openIndex === idx ? null : idx);
+  };
+
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 flex items-center justify-center">
-      <div className="container max-w-4xl px-4 md:px-6">
-        <div className="space-y-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+    <section id="faq" className="w-full py-20 bg-slate-50 relative border-b border-slate-200/60">
+      
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        {/* Section Header */}
+        <div className="space-y-4 text-center mb-16">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-blue-100 bg-blue-50 text-blue-600 text-xs font-semibold uppercase tracking-wider">
+            <HelpCircle className="h-3.5 w-3.5" />
+            <span>Faq Desk</span>
+          </div>
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl text-slate-900">
             Frequently Asked Questions
           </h2>
-          <h4 className="text-lg font-bold tracking-tighter sm:text-lg md:text-lg text-gray-500 md:text-lg/relaxed lg:text-base/relaxed lg:text-lg/relaxed dark:text-gray-400">
-            Get answers to the most common questions about our 3D printing
-            services.
-          </h4>
+          <p className="text-slate-600 text-base sm:text-lg">
+            Find answers to standard logistics, layer resolutions, filament properties, and dimensional specifications below.
+          </p>
         </div>
-        <div className="mt-12 space-y-4">
-          <Collapsible className="rounded-md border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
-            <CollapsibleTrigger className="flex w-full items-center justify-between space-x-4 px-4 py-3">
-              <h4 className="text-lg font-semibold">
-                What file formats can I send for 3D printing?
-              </h4>
-              <CollapsibleTrigger asChild>
-                <Button size="sm" variant="ghost">
-                  <ChevronDownIcon className="h-5 w-5 transition-transform group-data-[state=open]:rotate-180" />
-                </Button>
-              </CollapsibleTrigger>
-            </CollapsibleTrigger>
-            <CollapsibleContent className="border-t border-gray-200 px-4 py-3 dark:border-gray-800">
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                We recommend you to send the files in .STL or .OBJ format.
-              </p>
-            </CollapsibleContent>
-          </Collapsible>
-          <Collapsible className="rounded-md border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
-            <CollapsibleTrigger className="flex w-full items-center justify-between space-x-4 px-4 py-3">
-              <h4 className="text-lg font-semibold">
-                How long does it take to receive the quotation?
-              </h4>
-              <CollapsibleTrigger asChild>
-                <Button size="sm" variant="ghost">
-                  <ChevronDownIcon className="h-5 w-5 transition-transform group-data-[state=open]:rotate-180" />
-                </Button>
-              </CollapsibleTrigger>
-            </CollapsibleTrigger>
-            <CollapsibleContent className="border-t border-gray-200 px-4 py-3 dark:border-gray-800">
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                We are trying our best to deliver it at the earliest, worst case
-                would be in 24 hours maximum. If not, please contact us via
-                0702534485.
-              </p>
-            </CollapsibleContent>
-          </Collapsible>
-          <Collapsible className="rounded-md border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
-            <CollapsibleTrigger className="flex w-full items-center justify-between space-x-4 px-4 py-3">
-              <h4 className="text-lg font-semibold">
-                What payment types are accepted?
-              </h4>
-              <CollapsibleTrigger asChild>
-                <Button size="sm" variant="ghost">
-                  <ChevronDownIcon className="h-5 w-5 transition-transform group-data-[state=open]:rotate-180" />
-                </Button>
-              </CollapsibleTrigger>
-            </CollapsibleTrigger>
-            <CollapsibleContent className="border-t border-gray-200 px-4 py-3 dark:border-gray-800">
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                We accept bank transfers, හෙළPay, VISA, MASTER, AMEX cards,
-                eZcash and mCash, Frimi, iPay, Sampath Bank (Vishwa) or HNB Bank
-                online transfers.
-              </p>
-            </CollapsibleContent>
-          </Collapsible>
-          <Collapsible className="rounded-md border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
-            <CollapsibleTrigger className="flex w-full items-center justify-between space-x-4 px-4 py-3">
-              <h4 className="text-lg font-semibold">
-                How long will it take to deliver the print?
-              </h4>
-              <CollapsibleTrigger asChild>
-                <Button size="sm" variant="ghost">
-                  <ChevronDownIcon className="h-5 w-5 transition-transform group-data-[state=open]:rotate-180" />
-                </Button>
-              </CollapsibleTrigger>
-            </CollapsibleTrigger>
-            <CollapsibleContent className="border-t border-gray-200 px-4 py-3 dark:border-gray-800">
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                We deliver 3D printed objects to any part of Sri Lanka. It will
-                take 1-2 days to receive the objects after print completion.
-              </p>
-            </CollapsibleContent>
-          </Collapsible>
-          <Collapsible className="rounded-md border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950">
-            <CollapsibleTrigger className="flex w-full items-center justify-between space-x-4 px-4 py-3">
-              <h4 className="text-lg font-semibold">
-                Are my files kept confidential?
-              </h4>
-              <CollapsibleTrigger asChild>
-                <Button size="sm" variant="ghost">
-                  <ChevronDownIcon className="h-5 w-5 transition-transform group-data-[state=open]:rotate-180" />
-                </Button>
-              </CollapsibleTrigger>
-            </CollapsibleTrigger>
-            <CollapsibleContent className="border-t border-gray-200 px-4 py-3 dark:border-gray-800">
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Yes, of course, we will never share your files with a 3rd party.
-              </p>
-            </CollapsibleContent>
-          </Collapsible>
+
+        {/* Accordions List */}
+        <div className="space-y-4">
+          {faqs.map((faq, idx) => {
+            const isOpen = openIndex === idx;
+            return (
+              <div 
+                key={idx}
+                className="rounded-xl border border-slate-200 bg-white overflow-hidden transition-all duration-300 hover:border-slate-300 shadow-sm"
+              >
+                <button
+                  onClick={() => toggleAccordion(idx)}
+                  className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-bold text-slate-900 hover:text-blue-600 transition-colors focus:outline-none"
+                >
+                  <span className="text-sm sm:text-base">{faq.question}</span>
+                  <div className="p-1 rounded bg-slate-50 border border-slate-200 text-slate-500 transition-colors">
+                    {isOpen ? (
+                      <Minus className="h-4 w-4 text-blue-600" />
+                    ) : (
+                      <Plus className="h-4 w-4" />
+                    )}
+                  </div>
+                </button>
+
+                <div 
+                  className={`transition-all duration-300 ease-in-out ${
+                    isOpen 
+                      ? "max-h-40 border-t border-slate-100 opacity-100 py-4 px-5" 
+                      : "max-h-0 opacity-0 pointer-events-none"
+                  }`}
+                >
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
+
       </div>
     </section>
   );

@@ -1,20 +1,14 @@
 import type { Metadata } from 'next'
-import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'BroocFab',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Structure Lab | House Plans to Physical 3D Models',
+  description: 'Turn your floor plans and blueprints into detailed physical 3D scale models in Sri Lanka with BroocFab.',
 }
 
-export default function RootLayout({
+export default function StructureLabLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  )
+  return <>{children}</>;
 }

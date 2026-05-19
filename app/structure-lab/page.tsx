@@ -25,28 +25,37 @@ export default function StructureLabLanding() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-          <div className="flex items-center space-x-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-900">
-              <span className="text-white font-bold text-lg">BF</span>
-            </div>
-            <div>
-              <span className="text-xl font-bold text-slate-900">BroocFab</span>
-              <div className="text-sm text-slate-600">Structure Lab</div>
+      <header className="sticky top-4 z-50 mx-auto w-[calc(100%-1.5rem)] sm:w-[calc(100%-2.5rem)] max-w-6xl rounded-[24px] border border-slate-200/80 bg-white/95 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.08)]">
+        <div className="px-5 sm:px-6 lg:px-8">
+          <div className="flex h-14 sm:h-16 items-center justify-between">
+            <div className="flex items-center gap-4 md:gap-5 shrink-0">
+              <Link href="/" className="flex items-center group py-1">
+                <Image
+                  src="/logo_main.png"
+                  alt="BroocFab Logo"
+                  width={220}
+                  height={72}
+                  className="h-[40px] sm:h-[46px] w-auto object-contain transition-all duration-300 group-hover:scale-[1.02]"
+                  priority
+                />
+              </Link>
+            <div className="hidden sm:block h-6 sm:h-8 w-px bg-slate-200" />
+            <div className="hidden sm:block">
+              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Structure Lab</span>
             </div>
           </div>
 
           <div className="flex items-center space-x-4">
-            <Button asChild className="bg-green-600 hover:bg-green-700">
+            <Button asChild className="bg-[#25D366] hover:bg-[#1ebd5c] text-white rounded-xl shadow-sm hover:-translate-y-0.5 transition-all text-xs h-9 sm:h-10 px-4 sm:px-5">
               <Link href={whatsappLink} target="_blank">
-                <MessageCircle className="mr-2 h-4 w-4" />
+                <MessageCircle className="mr-1.5 h-4 w-4" />
                 WhatsApp Quote
               </Link>
             </Button>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
       {/* Hero Section */}
       <section className="relative py-24 md:py-32 min-h-[80vh] flex items-center">
