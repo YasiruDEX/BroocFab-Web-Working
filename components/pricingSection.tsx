@@ -44,17 +44,6 @@ export default function PricingSection() {
       ],
       startingPrice: "LKR 45 / g",
       color: "hover:border-blue-500/40 hover:shadow-blue-500/5"
-    },
-    {
-      name: "SLA Resin",
-      desc: "Microscopic layer resolution delivering injection-mold quality surfaces and extreme details.",
-      bestFor: [
-        "Detailed miniatures",
-        "Micro-mechanical parts",
-        "Jewelry & molding masters"
-      ],
-      startingPrice: "LKR 60 / g",
-      color: "hover:border-blue-500/40 hover:shadow-blue-500/5"
     }
   ];
 
@@ -81,7 +70,7 @@ export default function PricingSection() {
         </div>
 
         {/* Full-Width Materials responsive grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 w-full">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto w-full">
           {materials.map((mat, i) => (
             <div 
               key={i} 

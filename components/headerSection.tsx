@@ -124,10 +124,10 @@ export default function HeaderSection() {
                 href="https://wa.me/94702534485?text=Hi%20BroocFab%2C%20I%27d%20like%20a%20quote%20for%20a%203D%20model%21"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-[13px] font-bold text-white bg-slate-900 hover:bg-slate-800 shadow-sm transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-[13px] font-bold text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:brightness-110 hover:shadow-[0_4px_20px_rgba(37,99,235,0.4)] shadow-sm transition-all duration-300 hover:-translate-y-0.5"
               >
                 Contact Us
-                <Phone className="h-3.5 w-3.5 text-slate-300 ml-1.5" />
+                <Phone className="h-3.5 w-3.5 text-white ml-2" />
               </a>
             </div>
 
@@ -179,10 +179,10 @@ export default function HeaderSection() {
               <a
                 href="https://wa.me/94702534485?text=Hi%20BroocFab%2C%20I%27d%20like%20a%20quote%20for%20a%203D%20model%21"
                 onClick={() => setIsOpen(false)}
-                className="w-full inline-flex items-center justify-center px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-slate-900 hover:bg-slate-800 shadow text-center"
+                className="w-full inline-flex items-center justify-center px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:brightness-110 hover:shadow-[0_4px_20px_rgba(37,99,235,0.4)] shadow transition-all duration-300 text-center"
               >
                 Contact Us
-                <Phone className="h-4 w-4 text-slate-300 ml-2" />
+                <Phone className="h-4 w-4 text-white ml-2" />
               </a>
             </div>
           </div>

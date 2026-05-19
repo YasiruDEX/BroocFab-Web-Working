@@ -40,7 +40,7 @@ export default function FooterSection() {
               <img 
                 src="/logo_main.png" 
                 alt="BroocFab Logo" 
-                className="h-10 sm:h-12 w-auto object-contain"
+                className="h-10 sm:h-12 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
               />
             </Link>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
