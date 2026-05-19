@@ -7,10 +7,12 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://broocfab.com"),
   title: {
-    default: "BroocFab | Professional 3D Printing & Rapid Prototyping Sri Lanka",
+    default:
+      "BroocFab | Professional 3D Printing & Rapid Prototyping Sri Lanka",
     template: "%s | BroocFab 3D Printing",
   },
-  description: "Premium engineering-grade 3D printing, rapid prototyping, and custom digital fabrication services in Colombo, Sri Lanka. FDM, SLA resin, and rapid delivery.",
+  description:
+    "Premium engineering-grade 3D printing, rapid prototyping, and custom digital fabrication services in Colombo, Sri Lanka. FDM, SLA resin, and rapid delivery.",
   keywords: [
     "3D Printing Sri Lanka",
     "Rapid Prototyping Sri Lanka",
@@ -23,7 +25,7 @@ export const metadata: Metadata = {
     "On-demand 3D printing Sri Lanka",
     "Industrial 3D printing Sri Lanka",
     "Resin 3D Printing Sri Lanka",
-    "BroocFab"
+    "BroocFab",
   ],
   authors: [{ name: "BroocFab" }],
   creator: "BroocFab",
@@ -32,7 +34,8 @@ export const metadata: Metadata = {
     locale: "en_LK",
     url: "https://broocfab.com",
     title: "BroocFab | Professional 3D Printing & Rapid Prototyping Sri Lanka",
-    description: "Premium engineering-grade 3D printing, rapid prototyping, and custom digital fabrication services in Colombo, Sri Lanka. FDM, SLA resin, and rapid delivery.",
+    description:
+      "Premium engineering-grade 3D printing, rapid prototyping, and custom digital fabrication services in Colombo, Sri Lanka. FDM, SLA resin, and rapid delivery.",
     siteName: "BroocFab",
     images: [
       {
@@ -46,7 +49,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "BroocFab | Professional 3D Printing & Rapid Prototyping Sri Lanka",
-    description: "Premium engineering-grade 3D printing and custom digital fabrication services in Colombo, Sri Lanka.",
+    description:
+      "Premium engineering-grade 3D printing and custom digital fabrication services in Colombo, Sri Lanka.",
     images: ["/main.jpg"],
   },
   robots: {
@@ -55,9 +59,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   alternates: {
@@ -75,40 +79,38 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "BroocFab",
-  "image": "https://broocfab.com/logo_main.png",
-  "description": "Professional 3D Printing & Rapid Prototyping in Sri Lanka. FDM and SLA resin printing for engineering, architectural, and consumer projects.",
+  name: "BroocFab",
+  image: "https://broocfab.com/logo_main.png",
+  description:
+    "Professional 3D Printing & Rapid Prototyping in Sri Lanka. FDM and SLA resin printing for engineering, architectural, and consumer projects.",
   "@id": "https://broocfab.com",
-  "url": "https://broocfab.com",
-  "telephone": "+94702534485",
-  "priceRange": "$$",
-  "address": {
+  url: "https://broocfab.com",
+  telephone: "+94702534485",
+  priceRange: "$$",
+  address: {
     "@type": "PostalAddress",
-    "addressLocality": "Colombo",
-    "addressCountry": "LK"
+    addressLocality: "Colombo",
+    addressCountry: "LK",
   },
-  "geo": {
+  geo: {
     "@type": "GeoCoordinates",
-    "latitude": 6.9271,
-    "longitude": 79.8612
+    latitude: 6.9271,
+    longitude: 79.8612,
   },
-  "openingHoursSpecification": {
+  openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
+    dayOfWeek: [
       "Monday",
       "Tuesday",
       "Wednesday",
       "Thursday",
       "Friday",
-      "Saturday"
+      "Saturday",
     ],
-    "opens": "09:00",
-    "closes": "18:00"
+    opens: "09:00",
+    closes: "18:00",
   },
-  "sameAs": [
-    "https://facebook.com/broocfab",
-    "https://instagram.com/broocfab"
-  ]
+  sameAs: ["https://facebook.com/broocfab", "https://instagram.com/broocfab"],
 };
 
 export default function RootLayout({
